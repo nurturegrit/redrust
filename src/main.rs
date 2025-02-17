@@ -17,8 +17,7 @@ fn main() {
     }
 }
 
-fn handle_connection(stream:&mut TcpListener){
-
+fn handle_connection(stream: &mut TcpListener) {
     let mut buffer = [0; 512];
     stream.read(&mut buffer).unwrap();
 
